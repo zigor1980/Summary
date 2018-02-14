@@ -1,0 +1,28 @@
+{
+  "name": "summary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zigor1980/zigor1980.github.io.git"
+  },
+  "author": "Zayac Igor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zigor1980/zigor1980.github.io/issues"
+  },
+  "homepage": "https://github.com/zigor1980/zigor1980.github.io#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^2.2.1"
+  }
+}
