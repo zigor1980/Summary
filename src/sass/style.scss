@@ -228,7 +228,7 @@
       }
       @media screen and (max-width: 425px){
         line-height: 1;
-        min-height: 150px;
+        min-height: 170px;
         display: none;
       }
       h3{
@@ -439,11 +439,13 @@
 }
 
 #callback{
+  padding: 1%;
   textarea{
     height: 150px;
     resize: none;
   }
   .submit{
+    border: none;
     cursor: pointer;
     position: relative;
     display: block;
@@ -453,7 +455,7 @@
     width: 100%;
     border-radius: 4px;
     padding: 12px 0;
-    margin-top: 24px;
+    margin: 24px auto 0;
     transition: all linear .1s;
     transition-duration: 0.4s;
     text-decoration: none;
@@ -488,18 +490,17 @@
   }
 
   input[type = "text"],textarea{
+    box-sizing: border-box;
     border: 2px solid transparent;
     border-radius: 4px;
     padding: 10px 0;
-    margin: 0;
-    margin-bottom: 24px;
-    display: block;
+    margin:  0 auto 24px;
     width: 100%;
+    display: block;
     text-indent: 5px;
     line-height: 24px;
     transition: all ease .5s;
     &:focus{
-      outline: none;
       border: 2px solid rgba(0,0,0,0.10);
     }
   }

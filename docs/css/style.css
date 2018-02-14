@@ -216,7 +216,7 @@
     @media screen and (max-width: 425px) {
       #expectation .wrapper .cell {
         line-height: 1;
-        min-height: 150px;
+        min-height: 170px;
         display: none; } }
     #expectation .wrapper .cell h3 {
       display: inline-block;
@@ -387,67 +387,68 @@
           grid-column: 1/1;
           grid-row: 3; } }
 
-#callback textarea {
-  height: 150px;
-  resize: none; }
-
-#callback .submit {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  background: #DD3E18;
-  color: #ffffff;
-  text-align: center;
-  width: 100%;
-  border-radius: 4px;
-  padding: 12px 0;
-  margin-top: 24px;
-  -webkit-transition: all linear .1s;
-  transition: all linear .1s;
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s;
-  text-decoration: none;
-  overflow: hidden; }
-  #callback .submit:hover {
-    -webkit-box-shadow: inset 0px -25px 146px -35px #EB7252;
-    box-shadow: inset 0px -25px 146px -35px #EB7252; }
-  #callback .submit:before {
-    content: "";
-    background: #EB7252;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -50%;
-    margin-top: -100%;
-    opacity: 0;
-    -webkit-transition: all .8s;
-    transition: all .8s;
-    border-radius: 50%; }
-  #callback .submit:active {
+#callback {
+  padding: 1%; }
+  #callback textarea {
+    height: 150px;
+    resize: none; }
+  #callback .submit {
     border: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #cccccc; }
-    #callback .submit:active:before {
-      padding: 0;
-      margin: 0;
-      opacity: 1;
-      -webkit-transition: 0s;
-      transition: 0s; }
-
-#callback input[type="text"], #callback textarea {
-  border: 2px solid transparent;
-  border-radius: 4px;
-  padding: 10px 0;
-  margin: 0;
-  margin-bottom: 24px;
-  display: block;
-  width: 100%;
-  text-indent: 5px;
-  line-height: 24px;
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s; }
-  #callback input[type="text"]:focus, #callback textarea:focus {
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0.1); }
+    cursor: pointer;
+    position: relative;
+    display: block;
+    background: #DD3E18;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+    border-radius: 4px;
+    padding: 12px 0;
+    margin: 24px auto 0;
+    -webkit-transition: all linear .1s;
+    transition: all linear .1s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden; }
+    #callback .submit:hover {
+      -webkit-box-shadow: inset 0px -25px 146px -35px #EB7252;
+      box-shadow: inset 0px -25px 146px -35px #EB7252; }
+    #callback .submit:before {
+      content: "";
+      background: #EB7252;
+      display: block;
+      position: absolute;
+      padding-top: 300%;
+      padding-left: 350%;
+      margin-left: -50%;
+      margin-top: -100%;
+      opacity: 0;
+      -webkit-transition: all .8s;
+      transition: all .8s;
+      border-radius: 50%; }
+    #callback .submit:active {
+      border: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #cccccc; }
+      #callback .submit:active:before {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        -webkit-transition: 0s;
+        transition: 0s; }
+  #callback input[type="text"], #callback textarea {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    padding: 10px 0;
+    margin: 0 auto 24px;
+    width: 100%;
+    display: block;
+    text-indent: 5px;
+    line-height: 24px;
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s; }
+    #callback input[type="text"]:focus, #callback textarea:focus {
+      border: 2px solid rgba(0, 0, 0, 0.1); }
